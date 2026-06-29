@@ -18,6 +18,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Navigates back to the product listing page
   const handleContinueShopping = (e) => {
+    e.preventDefault(); // Detiene cualquier recarga automática del navegador
     onContinueShopping(e);
   };
 
